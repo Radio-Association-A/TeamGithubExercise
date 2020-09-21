@@ -24,4 +24,16 @@ public class UnitTest extends JerseyTest {
 
         assertEquals(out,12);
     }
+    
+    @Test
+    public void divTest(){
+
+        int out = target("div")
+                .queryParam("Value1",10)
+                .queryParam("Value2",2)
+                .request()
+                .get(Integer.class);
+
+        assertEquals(out,5);
+    }
 }
