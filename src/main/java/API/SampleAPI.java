@@ -14,4 +14,11 @@ public class SampleAPI {
         return val1 + val2;
     }
 
+    @GET
+    @Path("/multiplication")
+    public int multiplyValues(@QueryParam("Value1") final int val1, @QueryParam("Value2") final int val2){
+
+        return val1 * val2;
+    }
+
 }
