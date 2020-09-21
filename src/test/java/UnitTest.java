@@ -35,5 +35,16 @@ public class UnitTest extends JerseyTest {
                 .get(Integer.class);
 
         assertEquals(out,5);
+
+    @Test
+    public void multiplicationTest(){
+
+        int out = target("multiplication")
+                .queryParam("Value1",5)
+                .queryParam("Value2",5)
+                .request()
+                .get(Integer.class);
+
+        assertEquals(out,25);
     }
 }
