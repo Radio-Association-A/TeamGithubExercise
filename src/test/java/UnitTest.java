@@ -26,15 +26,16 @@ public class UnitTest extends JerseyTest {
     }
     
     @Test
-    public void divTest(){
+    public void divTest() {
 
         int out = target("div")
-                .queryParam("Value1",10)
-                .queryParam("Value2",2)
+                .queryParam("Value1", 10)
+                .queryParam("Value2", 2)
                 .request()
                 .get(Integer.class);
 
-        assertEquals(out,5);
+        assertEquals(out, 5);
+    }
 
     @Test
     public void multiplicationTest(){
@@ -47,4 +48,17 @@ public class UnitTest extends JerseyTest {
 
         assertEquals(out,25);
     }
+
+    @Test
+    public void subTest(){
+
+            int out = target("sub")
+                    .queryParam("Value1",8)
+                    .queryParam("Value2",2)
+                    .request()
+                    .get(Integer.class);
+
+            assertEquals(out,6);
+
+        }
 }
