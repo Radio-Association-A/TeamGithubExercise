@@ -27,4 +27,12 @@ public class SampleAPI {
         return val1 * val2;
     }
 
+    @GET
+    @Path("/sub")
+    public int subValues(@QueryParam("Value1") final int val1, @QueryParam("Value2") final int val2){
+
+        return val1 - val2;
+    }
+
+
 }
