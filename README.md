@@ -10,20 +10,35 @@ After cloning the project, navigate to the main project folder (contains src fol
 ## Features
 
 ### Addition
- The addition feature takes in two values and addition them together to give the product. 
+The addition feature takes in two values and add them together to give the output. 
+
+```
+/add?value1=4&value2=2
+```
 
 ### Multiplication
- The multiplication feature takes in two values and multiplies them together to give the product. 
+The multiplication feature takes in two values and multiplies them together to give the product. 
+
+```
+/multiplication?value1=4&value2=2
+```
 
 ### Division
- The divsion feature takes in two values and divides them together to give the product. 
+The divsion feature takes in two values and divides them to give the output. 
+
+```
+/div?value1=4&value2=2
+```
 
 ### Subtraction
- The Subtraction feature takes in two values and subtracts them together to give the product. 
+The Subtraction feature takes in two values and subtracts them to give the output. 
 
+```
+/sub?value1=4&value2=2
+```
 
- ## How to use
- Currently they can be accessed through the test and ran with the result.
+## How to use
+Currently they can be accessed through the test and ran with the result.
 
- ## Future work
-Add more functionality ot the API then the current access through tests.
+## Future work
+Add more functionality to the API than the current access through tests.
